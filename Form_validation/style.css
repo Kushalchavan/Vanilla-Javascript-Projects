@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;900&family=Permanent+Marker&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&family=Ysabeau+Infant:ital,wght@1,1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+ --blue-color : #007BFF;
+ --red-color: #DF4554;
+ --green-color: #56e677;
+ --text-color: #777777;
+ --heading-color: #000000;
+ --background-color:#F4F4F4; 
+ --white-color: #ffffff;
+ --font-color: #000000;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    background-color: var(--white-color);
+    padding: 2vh;
+    line-height: 2;
+    border-radius: 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h1{
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+.form-field.error input{
+    border-color: var(--red-color);
+}
+.form-field.success input {
+    border-color: var(--green-color);
+}
+.form-field small {
+    color: var(--red-color);
+}
+input[type=text],[type=password] {
+    height: 2.5em;
+    outline: none;
+    padding: 1em;
+    color: var(--font-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0.5em;
+}
+
+input[type=submit] {
+    height: 2.7em;
+    margin-top: 1.6em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #0069d9;
+}

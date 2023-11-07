@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+    margin-bottom: 10px;
+}
+
+.container #user-input {
+    width: 300px;
+    height: 40px;
+    background-color: #edebeb;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.container #add-button {
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: plum;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.todo-container {
+    margin-top: 10px;
+}
+
+.todo-item {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #edebeb;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.trash-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(234, 130, 130);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.todo-item:hover .trash-button {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#clear-button {
+    height: 35px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: plum;
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}

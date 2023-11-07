@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;900&family=Permanent+Marker&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&family=Ysabeau+Infant:ital,wght@1,1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar .toggle-btn{
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar .toggle-btn.active{
+    transform: rotate(90deg);
+    transition: all 0.4s ease-in-out;
+}
+.sidebar .links a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #f5f5f5;
+    border-bottom: 1px solid #1b1b1b;
+}
+.sidebar .links a.active,
+.sidebar .links a:hover {
+    background: #222;
+    color: #00acee;
+}
+.sidebar .links a i{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.sidebar.active {
+    left: 0;
+}
