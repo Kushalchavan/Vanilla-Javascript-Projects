@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-player-js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favixon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-img"></div>
+    <div class="container">
+        <img src="images/music.jpg" alt="">
+        <h1>Descpacito</h1>
+        <h4>Luis Fonsi Ft. Puetro Rican</h4>
+        <audio src="song/Despacito_192(PaglaSongs).mp3" id="song"></audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <div class="backword">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="pause">
+                <i class="fa-solid fa-pause"></i>
+            </div>
+            <div class="forward">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
