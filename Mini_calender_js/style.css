@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;900&family=Permanent+Marker&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&family=Ysabeau+Infant:ital,wght@1,1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color:slateblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.month-days, .month-year {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.month-days h1 {
+    font-size: 75px;
+    font-weight: 400;
+}
+
+
+.month-days {
+    width: 60%;
+}
+
+.month-year {
+    width: 40%;
+    background-color: #051937;
+    color: #fff;
+    border-radius:  0 10px 10px 0;
+}
+
+
